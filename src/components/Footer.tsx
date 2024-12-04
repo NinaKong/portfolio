@@ -39,7 +39,7 @@ const Footer: FC<FooterProps> = () => (
               </Link>
             </div>
             <div className="w-full md:w-auto p-3 md:px-6">
-              <Link to="contact" activeClass="active" smooth spy duration={500} className="relative group py-1.5 px-2.5 text-lg text-gray-500 font-medium">
+              <Link to="contact" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-lg text-gray-500 font-medium">
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all"></span>
                 Contact
               </Link>
