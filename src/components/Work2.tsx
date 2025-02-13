@@ -12,7 +12,7 @@ const Work2: FC<Work2Props> = () => (
             <img src={Cendyn} alt="Cendyn" className="object-cover rounded-lg shadow-md" />
           </div>
           <div className="max-w-xl">
-            <h2 className="text-3xl mb-2.5 font-extrabold text-gray-900 title">Front End Software Engineer</h2>
+            <h2 className="text-3xl mb-2.5 font-extrabold text-gray-900 title">Software Engineer, Front End</h2>
             <p className="text-base text-xl font-semibold leading-6 text-indigo-500">
               Cendyn
             </p>
@@ -29,7 +29,7 @@ const Work2: FC<Work2Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Implement complex and custom-built web applications utilizing advanced HTML5, CSS3, JavaScript, jQuery, and AJAX.
+                  Implemented complex and custom-built web applications utilizing advanced HTML5, CSS3, JavaScript, jQuery, and AJAX.
                 </p>
               </li>
               <li className="flex items-start lg:col-span-1">
@@ -41,7 +41,7 @@ const Work2: FC<Work2Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Build responsive web applications integrating Bootstrap and SCSS/LESS for clients such as Google, Hilton and Marriott.
+                  Built responsive web applications integrating Bootstrap and SCSS/LESS for clients such as Google, Hilton and Marriott.
                 </p>
               </li>
               <li className="flex items-start lg:col-span-1">
@@ -53,7 +53,7 @@ const Work2: FC<Work2Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Build innovative mobile application UI using AngularJS and Ionic frameworks for Android and iOS.
+                  Created innovative mobile application UI using AngularJS and Ionic frameworks for Android and iOS.
                 </p>
               </li>
               <li className="flex items-start lg:col-span-1">
@@ -65,7 +65,7 @@ const Work2: FC<Work2Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Lead company-wide UIKit project with high-performance UI components to drive UI consistency and reusability.
+                  Led company-wide UIKit project with high-performance UI components to drive UI consistency and reusability.
                 </p>
               </li>
               <li className="flex items-start lg:col-span-1">
@@ -77,19 +77,7 @@ const Work2: FC<Work2Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Work closely with technical experts to build out reusable and modular web page semantic markups and designs.
-                </p>
-              </li>
-              <li className="flex items-start lg:col-span-1">
-                <div className="flex-shrink-0">
-                  <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"></path>
-                  </svg>
-                </div>
-                <p className="ml-3 leading-5 text-gray-600">
-                  Participate in design and lead quality code reviews with UX/UI designers to improve customer experience by understanding customer needs and innovate rapid solutions.
+                  Collaborated with technical experts and UX/UI designers to enhance the customer experience and deliver rapid solutions.
                 </p>
               </li>
             </ul>

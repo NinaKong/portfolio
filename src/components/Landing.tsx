@@ -17,7 +17,7 @@ const Landing: FC<LandingProps> = () => (
         <h1 className="font-light text-6xl">
           <RandomReveal isPlaying onComplete={() => ({ shouldRepeat: true, delay: 4 })} duration={2} characters="Nina Kong" />
         </h1>
-        <h3 className="font-light text-3xl">Senior/Lead Front End Software Engineer</h3>
+        <h3 className="font-light text-3xl">Senior Lead Software Engineer, Front End</h3>
       </div>
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
         <div className="relative inline-flex">

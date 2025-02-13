@@ -14,7 +14,7 @@ const About: FC<AboutProps> = () => (
           <div className="md:w-1/3 text-center mb-8 md:mb-0">
             <img src={Profile} alt="Profile Picture" className="rounded-full w-48 h-48 mx-auto mb-4 border-4 border-indigo-800 dark:border-blue-900 transition-transform duration-300 hover:scale-105" />
             <h1 className="text-2xl font-bold text-indigo-800 dark:text-white mb-2">Nina Kong</h1>
-            <p className="text-gray-600 mb-5 dark:text-gray-300">Senior/Lead Front End Software Engineer</p>
+            <p className="text-gray-600 mb-5 dark:text-gray-300">Senior Lead Software Engineer</p>
             <button onClick={() => openLinkedin('https://www.linkedin.com/in/ninaxuekong')} 
               className="btn relative inline-flex items-center justify-start overflow-hidden px-4 py-2 font-medium transition-all bg-indigo-800 text-white rounded-lg hover:bg-white group">
               <span className="w-56 h-48 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
@@ -24,7 +24,7 @@ const About: FC<AboutProps> = () => (
           <div className="md:w-2/3 md:pl-8">
             <h2 className="text-2xl md:text-3xl font-semibold text-left text-indigo-800 dark:text-white mb-4">About Me</h2>
             <p className="text-left text-gray-700 dark:text-gray-300 mb-6">
-              I’m Nina, a Senior/Lead Front End Software Engineer based in sunny Utah.
+              I’m Nina, a Senior Lead Front End Software Engineer based in sunny Utah.
               My journey has led me to the web, where I blend creativity with logic to create stunning websites and applications.
             </p>
             <h2 className="text-xl font-semibold text-left text-indigo-800 dark:text-white mb-4">Skills</h2>

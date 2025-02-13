@@ -13,7 +13,7 @@ const About: FC<Work1Props> = () => (
       <div className="container mx-auto text-left py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <div className="max-w-xl">
-            <h2 className="text-3xl mb-2.5 font-extrabold text-gray-900 title">Senior/Lead Front End Software Engineer</h2>
+            <h2 className="text-3xl mb-2.5 font-extrabold text-gray-900 title">Senior Lead Software Engineer, Front End</h2>
             <p className="text-base text-xl font-semibold leading-6 text-indigo-500">
               eReinsure | AmWins
             </p>
@@ -30,7 +30,7 @@ const About: FC<Work1Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Architect efficient front-end systems that drive company project Phoenix utilizing Angular, Angular Material, NgRx, Monorepo.
+                  Architect efficient, reusable front-end systems for Project Phoenix using Angular, Angular Material, NgRx, Monorepo, and SCSS.
                 </p>
               </li>
               <li className="flex items-start lg:col-span-1">
@@ -42,7 +42,7 @@ const About: FC<Work1Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Lead scalable front-end systems for company project Console-UI, leveraging React, Tailwind, and Redux.
+                  Direct the development of scalable front-end systems for Project Console-UI, utilizing React and Material UI.
                 </p>
               </li>
               <li className="flex items-start lg:col-span-1">
@@ -54,7 +54,7 @@ const About: FC<Work1Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Collaborate feedback from UI designers and product managers to implement features, prioritize needs, and deliver products.
+                  Collaborate with UX/UI designers and product managers to define new features, prioritize tasks, and ensure high-quality products.
                 </p>
               </li>
               <li className="flex items-start lg:col-span-1">
@@ -66,7 +66,7 @@ const About: FC<Work1Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Produce high quality architecture, provide technical guidance and mentorship to peers, and ensure high quality code.
+                  Deliver high-quality architecture, providing technical guidance and mentorship to peers.
                 </p>
               </li>
               <li className="flex items-start lg:col-span-1">
@@ -78,7 +78,7 @@ const About: FC<Work1Props> = () => (
                   </svg>
                 </div>
                 <p className="ml-3 leading-5 text-gray-600">
-                  Experience working in Agile based development environment and leading Scrum sessions with remote/distributed software teams.
+                  Lead Agile development teams and collaborating with remote/distributed teams to ensure efficient delivery of projects.
                 </p>
               </li>
             </ul>
