@@ -1,11 +1,9 @@
 import { FC } from 'react';
-import Amwins from '../assets/images/Amwins.jpg'
-
-
+import Amwins from '../assets/images/Amwins.jpg';
 interface Work1Props { }
 
-const About: FC<Work1Props> = () => (
-  <div id="work" className="Work1 max-w-7xl mt-16 m-auto">
+const Work1: FC<Work1Props> = () => (
+  <div id="work1" className="max-w-7xl mt-16 m-auto">
     <div className="flex justify-center mb-11 text-2xl md:text-3xl font-bold mb-4 dark:text-white">
       Work Experience
     </div>
@@ -21,7 +19,7 @@ const About: FC<Work1Props> = () => (
               Feb 2018 - Present
             </h4>
             <ul className="mt-8 space-y-3 font-medium">
-              <li className="flex items-start lg:col-span-1">
+              <li key={0} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -33,7 +31,7 @@ const About: FC<Work1Props> = () => (
                   Architect efficient, reusable front-end systems for Project Phoenix using Angular, Angular Material, NgRx, Monorepo, and SCSS.
                 </p>
               </li>
-              <li className="flex items-start lg:col-span-1">
+              <li key={1} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -45,7 +43,7 @@ const About: FC<Work1Props> = () => (
                   Direct the development of scalable front-end systems for Project Console-UI, utilizing React and Material UI.
                 </p>
               </li>
-              <li className="flex items-start lg:col-span-1">
+              <li key={2} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -57,7 +55,7 @@ const About: FC<Work1Props> = () => (
                   Collaborate with UX/UI designers and product managers to define new features, prioritize tasks, and ensure high-quality products.
                 </p>
               </li>
-              <li className="flex items-start lg:col-span-1">
+              <li key={3} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -69,7 +67,7 @@ const About: FC<Work1Props> = () => (
                   Deliver high-quality architecture, providing technical guidance and mentorship to peers.
                 </p>
               </li>
-              <li className="flex items-start lg:col-span-1">
+              <li key={4} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -92,4 +90,4 @@ const About: FC<Work1Props> = () => (
   </div>
 );
 
-export default About;
+export default Work1;

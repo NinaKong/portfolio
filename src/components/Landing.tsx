@@ -1,16 +1,16 @@
 import { FC } from 'react';
-import LandingVideo from '../assets/images/landing.mp4'
+import LandingVideo from '../assets/images/landing.mp4';
 import Icon from './Icon';
-import { RandomReveal } from 'react-random-reveal'
+import { RandomReveal } from 'react-random-reveal';
 
 interface LandingProps { }
-const Landing: FC<LandingProps> = () => (
 
-  <div className="Landing">
+const Landing: FC<LandingProps> = () => (
+  <div id="landing" className="Landing">
     <section className="relative h-screen flex flex-col items-center justify-center text-center text-white">
       <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
         <video className="min-w-full min-h-full absolute object-cover" autoPlay muted playsInline loop>
-          <source src={LandingVideo} type="video/mp4"></source>
+          <source src={LandingVideo} type="video/mp4" />
         </video>
       </div>
       <div className="video-content space-y-2 z-10">

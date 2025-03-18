@@ -5,7 +5,7 @@ import YT from '../assets/images/YT.jpg';
 
 interface EducationProps { }
 
-const Experience: FC<EducationProps> = () => (
+const Education: FC<EducationProps> = () => (
   <div id="education" className="Education mt-16">
     <div className="max-w-7xl mx-auto">
       <div className="flex justify-center text-2xl md:text-3xl font-bold mb-4 dark:text-white">
@@ -69,7 +69,7 @@ const Experience: FC<EducationProps> = () => (
               <strong>Thesis</strong>
               <p className="mb-2.5">Study on Evaluation System of Risk Investment in 2011</p>
               <strong>Courses</strong>
-              <p>Strategic Management, Marketing, Financial Management, Accounting</p>
+              <p>Strategic Management, Marketing, Accounting, Human Resources Management</p>
             </div>
             <ul className="flex flex-wrap items-center justify-start text-sm gap-2">
               <li title="Year type"
@@ -83,6 +83,9 @@ const Experience: FC<EducationProps> = () => (
               </li>
               <li className="flex items-center gap-2">
                 <span>GPA 3.5/4.0,</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span>Financial Management,</span>
               </li>
               <li className="flex items-center gap-2">
                 <span>Risk Investment</span>
@@ -137,4 +140,4 @@ const Experience: FC<EducationProps> = () => (
   </div>
 );
 
-export default Experience;
+export default Education;

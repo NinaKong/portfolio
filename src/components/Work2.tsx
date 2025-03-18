@@ -4,7 +4,7 @@ import Cendyn from '../assets/images/Cendyn.jpg';
 interface Work2Props { }
 
 const Work2: FC<Work2Props> = () => (
-  <div className="Work2 max-w-7xl m-auto">
+  <div id="work2" className="max-w-7xl m-auto">
     <section className="bg-gray-100">
       <div className="container mx-auto text-left py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
@@ -20,7 +20,7 @@ const Work2: FC<Work2Props> = () => (
               July 2014 - Jan 2018
             </h4>
             <ul className="mt-8 space-y-3 font-medium">
-              <li className="flex items-start lg:col-span-1">
+              <li key={5} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -32,7 +32,7 @@ const Work2: FC<Work2Props> = () => (
                   Implemented complex and custom-built web applications utilizing advanced HTML5, CSS3, JavaScript, jQuery, and AJAX.
                 </p>
               </li>
-              <li className="flex items-start lg:col-span-1">
+              <li key={6} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -44,7 +44,7 @@ const Work2: FC<Work2Props> = () => (
                   Built responsive web applications integrating Bootstrap and SCSS/LESS for clients such as Google, Hilton and Marriott.
                 </p>
               </li>
-              <li className="flex items-start lg:col-span-1">
+              <li key={7} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -56,7 +56,7 @@ const Work2: FC<Work2Props> = () => (
                   Created innovative mobile application UI using AngularJS and Ionic frameworks for Android and iOS.
                 </p>
               </li>
-              <li className="flex items-start lg:col-span-1">
+              <li key={8} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
@@ -68,7 +68,7 @@ const Work2: FC<Work2Props> = () => (
                   Led company-wide UIKit project with high-performance UI components to drive UI consistency and reusability.
                 </p>
               </li>
-              <li className="flex items-start lg:col-span-1">
+              <li key={9} className="flex items-start lg:col-span-1">
                 <div className="flex-shrink-0">
                   <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"

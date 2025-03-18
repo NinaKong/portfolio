@@ -2,28 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --button-bg: #1a1a1a;
+  --link-color: #646cff;
+  --link-hover-color: #535bf2;
+  --text-color: #213547;
+  --white: #fff;
+}
+
 #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   width: 100%;
   color-scheme: light dark;
-  color: rgb(31 41 55);
-  background-color: #fff;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--white);
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--link-color);
   text-decoration: inherit;
   cursor: pointer;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--link-hover-color) !important;
 }
 
 body {
@@ -46,54 +50,30 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-bg);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 .scroll-to-top {
   border-radius: 9999px !important;
-  background: rgb(99 102 241 / var(--tw-bg-opacity)) !important;
+  background: rgba(99, 102, 241, var(--tw-bg-opacity)) !important;
   padding: 6px;
 }
+.Toastify__toast {
+  margin: 60px -70px 0 0;
+  width: 100%;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--text-color);
+    background-color: var(--white);
   }
   a:hover {
-    color: rgb(55 48 163 / var(--tw-bg-opacity));
+    color: rgba(55, 48, 163, var(--tw-bg-opacity));
   }
   button {
     background-color: #f9f9f9;
   }
 }
 
-@layer base {
-  :root {
-    --color-text-base: 255, 255, 255;
-    --color-text-muted: 199, 210, 254;
-    --color-text-inverted: 79, 70, 229;
-    --color-fill: 67, 56, 202;
-    --color-button-accent: 255, 255, 255;
-    --color-button-accent-hover: 238, 242, 255;
-    --color-button-muted: 99, 102, 241;
-  }
-  .theme-swiss {
-    --color-text-base: 255, 255, 255;
-    --color-text-muted: 254, 202, 202;
-    --color-text-inverted: 220, 38, 38;
-    --color-fill: 185, 28, 28;
-    --color-button-accent: 255, 255, 255;
-    --color-button-accent-hover: 254, 242, 242;
-    --color-button-muted: 239, 68, 68;
-  }
-  .theme-neon {
-    --color-text-base: 17, 24, 2;
-    --color-text-muted: 47, 67, 6;
-    --color-text-inverted: 235, 250, 204;
-    --color-fill: 179, 255, 23;
-    --color-button-accent: 36, 52, 3;
-    --color-button-accent-hover: 55, 79, 5;
-    --color-button-muted: 212, 255, 122;
-  }
-}

@@ -2,17 +2,16 @@ import { FC } from 'react';
 
 interface Recommendation1Props { }
 
-const Recommendation: FC<Recommendation1Props> = () => (
-  <div id="testimonials" className="Recommendation1 max-w-7xl m-auto mt-16">
+const Recommendation1: FC<Recommendation1Props> = () => (
+  <div id="recommendation1" className="max-w-7xl m-auto mt-16">
     <div className="flex justify-center mb-11 text-2xl md:text-3xl font-bold mb-4 dark:text-white">
       Testimonials
     </div>
     <div className="w-full h-full bg-gray-100 dark:bg-gray-800">
-      <div className="w-full h-full py-20 flex flex-wrap justify-center items-center gap-2">
-        <div
-          className="w-[20rem] mx-auto flex flex-col gap-2 px-4 shadow-lg border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
+      <div className="w-full h-full py-10 flex flex-wrap justify-center items-center gap-2">
+        <div className="w-[320px] mt-20 mx-auto flex flex-col gap-2 px-4 shadow-lg border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
           <div className="w-full flex justify-center items-center">
-            <div className="w-[8rem] h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[4rem]">
+            <div className="w-[128px] h-[128px] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[64px]">
               <div className="inline-flex items-center justify-center w-full h-full text-4xl text-white bg-indigo-500 rounded-full">
                 CP
               </div>
@@ -31,10 +30,9 @@ const Recommendation: FC<Recommendation1Props> = () => (
             </p>
           </div>
         </div>
-        <div
-          className="w-[20rem] mt-20 mx-auto flex flex-col gap-2 px-4 border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
+        <div className="w-[320px] mt-20 mx-auto flex flex-col gap-2 px-4 border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
           <div className="w-full flex justify-center items-center">
-            <div className="w-[8rem] h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[4rem]">
+            <div className="w-[128px] h-[128px] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[64px]">
               <div className="inline-flex items-center justify-center w-full h-full text-4xl text-white bg-indigo-500 rounded-full">
                 XD
               </div>
@@ -45,17 +43,16 @@ const Recommendation: FC<Recommendation1Props> = () => (
               Xundong Ding
             </h1>
             <h2 className="text-lg text-indigo-500 font-semibold dark:text-white">
-              CTO at Cendyn
+              CTO
             </h2>
             <p className="text-gray-700 dark:text-gray-300">
               Nina is a fast learner and hard worker. She motivates herself and also her team members. The rare mix of productivity and ambition sets a great example for the rest of the team, and explains why everyone loves working with Nina.
             </p>
           </div>
         </div>
-        <div
-          className="w-[20rem] mt-20 mx-auto flex flex-col gap-2 px-4 shadow-lg border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
+        <div className="w-[320px] mt-20 mx-auto flex flex-col gap-2 px-4 shadow-lg border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
           <div className="w-full flex justify-center items-center">
-            <div className="w-[8rem] h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[4rem]">
+            <div className="w-[128px] h-[128px] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[64px]">
               <div className="inline-flex items-center justify-center w-full h-full text-4xl text-white bg-indigo-500 rounded-full">
                 CJ
               </div>
@@ -78,4 +75,4 @@ const Recommendation: FC<Recommendation1Props> = () => (
   </div>
 );
 
-export default Recommendation;
+export default Recommendation1;

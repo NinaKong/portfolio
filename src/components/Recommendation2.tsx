@@ -3,20 +3,19 @@ import { FC } from 'react';
 interface Recommendation2Props { }
 
 const Recommendation2: FC<Recommendation2Props> = () => (
-  <div className="Recommendation2 max-w-7xl m-auto">
+  <div id="recommendation2" className="max-w-7xl m-auto">
     <div className="w-full h-full bg-gray-100 dark:bg-gray-800">
       <div className="w-full h-full py-20md:pt-0 flex flex-wrap justify-center items-center gap-2">
-        <div
-          className="w-[20rem] mt-20 mx-auto flex flex-col gap-2 px-4 border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
+        <div className="w-[320px] m-20 mx-auto flex flex-col gap-2 px-4 border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
           <div className="w-full flex justify-center items-center">
-            <div className="w-[8rem] h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[4rem]">
+            <div className="w-[128px] h-[128px] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[64px]">
               <div className="inline-flex items-center justify-center w-full h-full text-4xl text-white bg-indigo-500 rounded-full">
                 YD
               </div>
             </div>
           </div>
           <div className="w-full h-full text-center flex flex-col gap-4 relative -top-10">
-            <h1 className="text-xl  font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
+            <h1 className="text-xl font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
               Yong Ding
             </h1>
             <h2 className="text-lg text-indigo-500 font-semibold dark:text-white">
@@ -27,17 +26,16 @@ const Recommendation2: FC<Recommendation2Props> = () => (
             </p>
           </div>
         </div>
-        <div
-          className="w-[20rem] max-md:mt-20 mx-auto flex flex-col gap-2 px-4 shadow-lg border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
+        <div className="w-[320px] mx-auto flex flex-col gap-2 px-4 shadow-lg border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
           <div className="w-full flex justify-center items-center">
-            <div className="w-[8rem] h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[4rem]">
+            <div className="w-[128px] h-[128px] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[64px]">
               <div className="inline-flex items-center justify-center w-full h-full text-4xl text-white bg-indigo-500 rounded-full">
                 LS
               </div>
             </div>
           </div>
           <div className="w-full h-full text-center flex flex-col gap-4 relative -top-10">
-            <h1 className="text-xl  font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
+            <h1 className="text-xl font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
               Leon 🌟 (4 Years Old)
             </h1>
             <h2 className="text-lg text-indigo-500 font-semibold dark:text-white">
@@ -48,17 +46,16 @@ const Recommendation2: FC<Recommendation2Props> = () => (
             </p>
           </div>
         </div>
-        <div
-          className="w-[20rem] m-20 mx-auto flex flex-col gap-2 px-4 shadow-lg border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
+        <div className="w-[320px] m-20 mx-auto flex flex-col gap-2 px-4 shadow-lg border border-gray-300 border-gray-300 rounded-lg bg-white dark:bg-gray-900">
           <div className="w-full flex justify-center items-center">
-            <div className="w-[8rem] h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[4rem]">
+            <div className="w-[128px] h-[128px] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[64px]">
               <div className="inline-flex items-center justify-center w-full h-full text-4xl text-white bg-indigo-500 rounded-full">
                 OC
               </div>
             </div>
           </div>
           <div className="w-full h-full text-center flex flex-col gap-4 relative -top-10">
-            <h1 className="text-xl  font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
+            <h1 className="text-xl font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
               Omar Carrasco
             </h1>
             <h2 className="text-lg text-indigo-500 font-semibold dark:text-white">

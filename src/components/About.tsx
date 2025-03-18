@@ -3,8 +3,7 @@ import Profile from '../assets/images/Profile.jpg'
 
 interface AboutProps { }
 const openLinkedin = (url: string) => {
-  const newTab = window.open(url, '_blank', 'noopener,noreferrer');
-  if (newTab) newTab.opener = null;
+  window.open(url, '_blank', 'noopener,noreferrer');
 }
 const About: FC<AboutProps> = () => (
   <div id="about" className="About">
@@ -67,7 +66,7 @@ const About: FC<AboutProps> = () => (
       </div>
     </div>
   </div>
-
+  
 );
 
 export default About;
