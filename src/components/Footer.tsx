@@ -21,13 +21,13 @@ const Footer: FC<FooterProps> = () => (
               </Link>
             </div>
             <div className="w-full md:w-auto p-3 md:px-6">
-              <Link key="work" to="work" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-lg text-gray-500 font-medium">
+              <Link key="work1" to="work1" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-lg text-gray-500 font-medium">
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all"></span>
                 Work
               </Link>
             </div>
             <div className="w-full md:w-auto p-3 md:px-6">
-              <Link key="testimonials" to="testimonials" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-lg text-gray-500 font-medium">
+              <Link key="recommendation1" to="recommendation1" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-lg text-gray-500 font-medium">
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all"></span>
                 Testimonials
               </Link>

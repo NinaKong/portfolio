@@ -1,6 +1,6 @@
 import Footer from './components/Footer';
 import Home from './components/Home';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Logo from './assets/images/Logo.png';
 import { Link } from 'react-scroll';
 import Loader from './components/Loader';
@@ -8,10 +8,20 @@ import Loader from './components/Loader';
 function App() {
   const [isHidden, setIsHidden] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+  const menuRef = useRef(null);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && (menuRef.current as HTMLElement).contains(event.target as Node)) {
+        setIsHidden(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   }, []);
   return (
     <>
@@ -28,11 +38,11 @@ function App() {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all"></span>
                   About
                 </Link>
-                <Link key="work" to="work" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-indigo-600">
+                <Link key="work1" to="work1" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-indigo-600">
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all"></span>
                   Work
                 </Link>
-                <Link key="testimonials" to="testimonials" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-indigo-600">
+                <Link key="recommendation1" to="recommendation1" activeClass="active" smooth spy offset={-100} duration={500} className="relative group py-1.5 px-2.5 text-indigo-600">
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all"></span>
                   Testimonials
                 </Link>
@@ -66,11 +76,11 @@ function App() {
             </div>
           </nav>
           <div id="mobileMenu" className={`${isHidden ? 'hidden' : ''} md:hidden  bg-white dark:bg-gray-800 transition-colors duration-300`}>
-            <Link onClick={() => setIsHidden(true)} to="about" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">About</Link>
-            <Link onClick={() => setIsHidden(true)} to="work" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">Work</Link>
-            <Link onClick={() => setIsHidden(true)} to="testimonials" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">Testimonials</Link>
-            <Link onClick={() => setIsHidden(true)} to="education" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">Education</Link>
-            <Link onClick={() => setIsHidden(true)} to="contact" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">Contact</Link>
+            <Link onClick={() => setIsHidden(true)} key="about" to="about" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">About</Link>
+            <Link onClick={() => setIsHidden(true)} key="work1" to="work1" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">Work</Link>
+            <Link onClick={() => setIsHidden(true)} key="recommendation1" to="recommendation1" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">Testimonials</Link>
+            <Link onClick={() => setIsHidden(true)} key="education" to="education" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">Education</Link>
+            <Link onClick={() => setIsHidden(true)} key="contact" to="contact" activeClass="active" smooth spy offset={-100} duration={500} className="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">Contact</Link>
           </div>
         </header>
         <div>
